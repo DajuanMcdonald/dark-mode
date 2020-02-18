@@ -23,6 +23,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Charts coinData={coinData} />
+      Powered by CoinGecko API
     </div>
   );
 };
