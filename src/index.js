@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {BrowserRouter as Router} from 'react-router-dom';
 import ReactDOM from "react-dom";
 import axios from "axios";
 
@@ -22,9 +23,10 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Charts coinData={coinData} />
+      Powered by CoinGecko API
     </div>
   );
 };
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Router><App /></Router>, rootElement);
